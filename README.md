@@ -5,7 +5,7 @@
 [streamlit-breast_cancer-2023-03-02-00-03-95.webm](https://user-images.githubusercontent.com/115895428/222337854-29117892-8f55-4bc7-95cb-a9c376af3611.webm)
 
 
-## Dataset
+## Introduction
 
 Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image in 3-dimensional space. This web application lets you alter the various characteristics and makes a prediction on the type of cancer: benign or malignant. 
 
