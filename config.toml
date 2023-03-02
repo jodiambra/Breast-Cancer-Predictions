@@ -4,3 +4,11 @@ primaryColor="#81003b"
 backgroundColor="#f3e9f0"
 textColor="#f3016f"
 font="serif"
+
+[server]
+headless = true
+port = 10000
+
+[browser]
+serverAddress = "0.0.0.0"
+serverPort = 10000
