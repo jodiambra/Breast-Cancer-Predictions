@@ -31,7 +31,7 @@ st.markdown(' Model to classify breast cancer into benign or malignant')
 
 st.image(image, width=1400)
 
-st.cache_data
+
 st.header('Cell Features')
 col1, col2, col3 = st.columns(3)
 with col1:
