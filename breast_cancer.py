@@ -31,6 +31,7 @@ st.markdown(' Model to classify breast cancer into benign or malignant')
 
 st.image(image, width=1400)
 
+st.cache_data
 st.header('Cell Features')
 col1, col2, col3 = st.columns(3)
 with col1:
@@ -73,7 +74,7 @@ with col3:
     fractal_dimension_worst = st.slider('Fractal Dimension Worst Value', 0.0055, 0.20, step=0.05)
 
 
-
+st.cache_resource
 if st.button('Predict Type of Cancer'):
     result = predict(np.array([[radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean,
        concave_points_mean, symmetry_mean, fractal_dimension_mean, radius_se, texture_se, perimeter_se, area_se, smoothness_se,
