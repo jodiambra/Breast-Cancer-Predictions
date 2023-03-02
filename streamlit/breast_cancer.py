@@ -74,8 +74,9 @@ with col3:
     fractal_dimension_worst = st.slider('Fractal Dimension Worst Value', 0.0055, 0.20, step=0.05)
 
 
-st.cache_resource
+
 if st.button('Predict Type of Cancer'):
+    st.cache_resource
     result = predict(np.array([[radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean,
        concave_points_mean, symmetry_mean, fractal_dimension_mean, radius_se, texture_se, perimeter_se, area_se, smoothness_se,
        compactness_se, concavity_se, concave_points_se, symmetry_se, fractal_dimension_se, radius_worst, texture_worst,
