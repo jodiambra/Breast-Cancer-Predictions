@@ -90,7 +90,7 @@ if st.button('Predict Type of Cancer'):
         st.success('Cancer is Benign')
     else: 
         st.error('Cancer is Malignant')
-    st.text('Probability of cancer is ', proba[1]*100)
+    st.text(proba[1]*100)
 
 with st.expander('Explanation'):
-    st.text('Benign - 0, Malignant - 1')
+    st.text('Probability of malignant cancer')
