@@ -32,7 +32,7 @@ st.markdown(' Model to classify breast cancer into benign or malignant')
 
 st.image(image, width=1400)
 
-rand_value = st.checkbox('Random Values')
+rand_value = st.checkbox('Random Prediction')
 if rand_value:
   st.header('Cell Features')
   col1, col2, col3 = st.columns(3)
