@@ -65,7 +65,7 @@ with col3:
     st.text('Worst Characteristics')
     radius_worst = st.slider('Radius Worst Value', 7.5, 36.5, step=1.0, value=random.uniform(7.5, 36.5))
     texture_worst = st.slider('Texture Worst Value', 12.0, 50.0, step=2.0, value=random.uniform(12.0, 50.0))
-    perimeter_worst = st.slider('Perimeter Worst Value', 50, 256, step=5.0, value=random.randint(50, 256))
+    perimeter_worst = st.slider('Perimeter Worst Value', 50, 256, step=5, value=random.randint(50, 256))
     area_worst = st.slider('Area Worst Value', 185, 4255, step=75, value=random.randint(185, 4225))
     smoothness_worst = st.slider('Smoothness Worst Value', 0.07, 0.25, step=0.01, value=random.uniform(0.07, 0.25))
     compactness_worst = st.slider('Compactness Worst Value', 0.025, 1.10, step=0.05, value=random.uniform(0.025, 1.10))
