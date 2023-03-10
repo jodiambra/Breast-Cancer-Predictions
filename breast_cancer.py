@@ -74,28 +74,26 @@ if rand_value:
       concave_points_worst = st.slider('Concave Points Worst Value', 0.000, 0.30, step=0.005, value=random.uniform(0.000, 0.30))
       symmetry_worst = st.slider('Symmetry Worst Value', 0.15, 0.70, step=0.10, value=random.uniform(0.15, 0.70))
       fractal_dimension_worst = st.slider('Fractal Dimension Worst Value', 0.0055, 0.20, step=0.05, value=random.uniform(0.0055, 0.20))
-
-
-
-  if st.button('Predict Type of Cancer'):
-      result = predict(np.array([[radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean,
+      
+  
+  result = predict(np.array([[radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean,
          concave_points_mean, symmetry_mean, fractal_dimension_mean, radius_se, texture_se, perimeter_se, area_se, smoothness_se,
          compactness_se, concavity_se, concave_points_se, symmetry_se, fractal_dimension_se, radius_worst, texture_worst,
          perimeter_worst, area_worst, smoothness_worst, compactness_worst, concavity_worst, concave_points_worst,
          symmetry_worst, fractal_dimension_worst]]))
-      proba = predict_proba(np.array([[radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean,
+  proba = predict_proba(np.array([[radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean,
          concave_points_mean, symmetry_mean, fractal_dimension_mean, radius_se, texture_se, perimeter_se, area_se, smoothness_se,
          compactness_se, concavity_se, concave_points_se, symmetry_se, fractal_dimension_se, radius_worst, texture_worst,
          perimeter_worst, area_worst, smoothness_worst, compactness_worst, concavity_worst, concave_points_worst,
          symmetry_worst, fractal_dimension_worst]])).tolist()[0]
-      if result[0]==0:
-          st.success('Cancer is Benign')
-      else: 
-          st.error('Cancer is Malignant')
-      st.text(proba[1]*100)
+    if result[0]==0:
+        st.success('Cancer is Benign')
+    else: 
+        st.error('Cancer is Malignant')
+    st.text(proba[1]*100)
 
   with st.expander('Explanation'):
-      st.text('Probability of malignant cancer')
+    st.text('Probability of malignant cancer')
       
 else:
   st.header('Cell Features')
