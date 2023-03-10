@@ -86,11 +86,11 @@ if rand_value:
          compactness_se, concavity_se, concave_points_se, symmetry_se, fractal_dimension_se, radius_worst, texture_worst,
          perimeter_worst, area_worst, smoothness_worst, compactness_worst, concavity_worst, concave_points_worst,
          symmetry_worst, fractal_dimension_worst]])).tolist()[0]
-    if result[0]==0:
-        st.success('Cancer is Benign')
-    else: 
-        st.error('Cancer is Malignant')
-    st.text(proba[1]*100)
+  if result[0]==0:
+    st.success('Cancer is Benign')
+  else: 
+    st.error('Cancer is Malignant')
+  st.text(proba[1]*100)
 
   with st.expander('Explanation'):
     st.text('Probability of malignant cancer')
