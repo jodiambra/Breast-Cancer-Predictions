@@ -7,4 +7,4 @@
 
 Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image in 3-dimensional space. This web application lets you alter the various characteristics and makes a prediction on the type of cancer: benign or malignant. 
 
-## Website can be accessed at : https://breast-cancer-prediction-z4yw.onrender.com/
+## Website can be accessed at : [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://breast-cancer-prediction-z4yw.onrender.com/)
